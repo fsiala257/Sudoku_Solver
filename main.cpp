@@ -14,7 +14,7 @@ int main()
 	std::cout<< "Initial board: " << std::endl;
 	sudoku.printBoard();				// Print board
 	sudoku.solve();					// Solve sudoku
-	sudoku.writeToFile("solution.json");		// Write results to file
+	sudoku.writeToFile("output.json");		// Write results to file
 	
 	return 0;
 }
