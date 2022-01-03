@@ -2,14 +2,14 @@
 // Sudoku.h
 // File contains implementations of Sudoku class methods
 //
-// Created by Firas Siala 12/29/2021
+// Created by Firas Siala 12/28/2021
 
 
 #include <fstream>
 #include "Sudoku.h"
 
 
-// METHOD: set method used to access and set private attribbutes (grid and N) from inputFileName
+// METHOD: set method used to access and set instance variables (grid and N) from inputFileName
 // PARAMS: inputFileName (string)
 void Sudoku::readBoard(const std::string inputFileName)
 {
@@ -46,7 +46,7 @@ void Sudoku::writeToFile(const std::string outputFileName)
 }
 
 
-// METHOD: if cell is empty. if all cells are filled (i.e. not equal to 0), solver exists the loop
+// METHOD: check if square is empty. if all squares are filled (i.e. not equal to 0), solver exists the loop
 // PARAMS: row and column (passed by reference to be used by the rest of the solver algorithm)
 bool Sudoku::emptySquare(int &row, int &col)
 {
@@ -114,7 +114,7 @@ bool Sudoku::solve()
 		return true;
 	}
 
-	//count++;
+
 	for(int num = 1; num <= N; num++)
 	{
 		if(numPossible(row,col,num))
