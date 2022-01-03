@@ -4,13 +4,14 @@
 //
 // Created by Firas Siala 12/29/2021
 
+
 #ifndef Sudoku_h
 #define Sudoku_h
+
 
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-//using string = std::string;
 
 class Sudoku 
 {
@@ -29,6 +30,7 @@ public:
 	void printBoard();
 	bool solve();
 };
+
 
 #endif
 

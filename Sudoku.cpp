@@ -4,9 +4,10 @@
 //
 // Created by Firas Siala 12/29/2021
 
-#include "Sudoku.h"
+
 #include <fstream>
- 
+#include "Sudoku.h"
+
 
 // METHOD: set method used to access and set private attribbutes (grid and N) from inputFileName
 // PARAMS: inputFileName (string)
