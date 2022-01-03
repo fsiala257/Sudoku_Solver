@@ -10,7 +10,7 @@
 
 
 // METHOD: set method used to access and set instance variables (grid and N) from inputFileName
-// PARAMS: inputFileName (string)
+// PARAMS: inputFileName (strin)
 void Sudoku::readBoard(const std::string inputFileName)
 {
 	std::ifstream inputFile;
