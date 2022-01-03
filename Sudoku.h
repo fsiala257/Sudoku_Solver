@@ -10,23 +10,22 @@
 #include <iostream>
 #include <nlohmann/json.hpp>
 
-using json = nlohmann::json;
-using string = std::string;
+//using string = std::string;
 
 class Sudoku 
 {
 
 // PRIVATE DATA MEMBERS AND METHODS
 private:
-	json board;
+	nlohmann::json board;
 	int N;
 	bool numPossible(const int &row, const int &col, const int &num);
 	bool emptySquare(int &row, int &col);	
 
 // PUBLIC METHODS	
 public:
-	void readBoard(const string inputFileName);
-	void writeToFile(string outputFileName);
+	void readBoard(const std::string inputFileName);
+	void writeToFile(const std::string outputFileName);
 	void printBoard();
 	bool solve();
 };

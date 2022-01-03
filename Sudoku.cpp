@@ -5,11 +5,12 @@
 // Created by Firas Siala 12/29/2021
 
 #include "Sudoku.h"
-#include <fstream> 
+#include <fstream>
+ 
 
 // METHOD: set method used to access and set private attribbutes (grid and N) from inputFileName
 // PARAMS: inputFileName (string)
-void Sudoku::readBoard(const string inputFileName)
+void Sudoku::readBoard(const std::string inputFileName)
 {
 	std::ifstream inputFile;
 	inputFile.open("input_files/"+inputFileName);
@@ -35,7 +36,7 @@ void Sudoku::printBoard()
 
 // METHOD: writes grid to a file
 // PARAMS: output file name (string).
-void Sudoku::writeToFile(const string outputFileName)
+void Sudoku::writeToFile(const std::string outputFileName)
 {
 	std::ofstream outputFile;
 	outputFile.open("output_files/"+outputFileName);
